@@ -108,10 +108,25 @@ GRUB_DEFAULT=0       # 기본 부팅 항목 (0번째 = 첫 번째)
 <pre><code>sudo grub-mkconfig /boot/grub/grub.cfg</code></pre>
 3. 재부팅하여 적용이 됐는지 확인한다.
 <pre><code>reboot</code></pre>
-
-# Hyprland 설치
+ㅌㅈ
+# Hyprland() 설치
+설치 전 pacman을 업데이트하고 hyprland kitty를 설치한다.
+<pre><code>sudo pacman -Syu #S:설치/업데이트, y:패키지 데이터베이스 갱신, u:업그레이드</code></pre>
 <pre><code>sudo pacman -S hyprland kitty</code></pre>
 
+## 엔비디아 드라이버 설치 
+<pre><code>sudo pacman -S nvidia nvidia-utils nvidia-settings
+reboot #드라이버 적용을 위해 재시작</code></pre>
 
-### 
+## Hyprland 실행
+<pre><code>Hyprland</code></pre>
+
+## wofi(앱 실행기) 설치
+<pre><code>sudo pacman -S wofi</code></pre>
+
+## 한글 폰트 설치
+<code>/usr/share/fonts</code> 디렉터리에 폰트 저장
+<pre><code></code></pre>
+
+##
 <pre><code></code></pre>
