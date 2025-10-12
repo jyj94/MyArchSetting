@@ -8,10 +8,10 @@
 [링크](./mdfiles/installHyprland.md)
 
 # wofi(앱 실행기) 설치
-[링크](./mdfils/installWofi.md)
+[링크](./mdfiles/installWofi.md)
 
 # 로그인 매니저 ReGreet 설치
-[링크](./mdfils/installRegreet.md)
+[링크](./mdfiles/installRegreet.md)
 
 # keyring 설치
 [링크](./mdfiles/installKeyring.md)
