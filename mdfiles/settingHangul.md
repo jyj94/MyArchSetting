@@ -29,7 +29,7 @@ export GLFW_IM_MODULE=fcitx
 # exec-once = nm-applet &
 # exec-once = waybar & hyprpaper & firefox
 
-<b>exec = fcitx5</b>
+<b>
 </code></pre>
 fcitx5와 fcitx5-configtool를 실행하고 한글을 설정한다.
 <pre><code>fcitx5 &
