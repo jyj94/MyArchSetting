@@ -5,6 +5,9 @@
 
 <pre><code>mv NotoSansCJK-VF.otf.ttc NotoSansMonoCJK-VF.otf.ttc /usr/share/fonts/NoTOSansCJK/ #하위 디렉터리에 저장</code></pre>
 
+```fc-cache -fv``` 폰트 데이터 갱신
+
+
 # 한글 입력기 fcitx5 설정
 <pre><code>sudo pacman -S fcitx5-im fcitx5-hangul fcitx5-configtool #fcitx5 설치</code></pre>
 
@@ -16,26 +19,9 @@ export XMODIFIERS="@im=fcitx"
 export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=fcitx
 </code></pre>
-자동으로 실행되도록 Hyprland 설정파일(<code>~/.config/hypr/hyprland.conf</code>)에 명령어 추가
 
-<pre><code>#################
-### AUTOSTART ###
-#################
-
-# Autostart necessary processes (like notifications daemons, status bars, etc.)
-# Or execute your favorite apps at launch like this:
-
-# exec-once = $terminal
-# exec-once = nm-applet &
-# exec-once = waybar & hyprpaper & firefox
-
-<b>
-</code></pre>
-fcitx5와 fcitx5-configtool를 실행하고 한글을 설정한다.
-<pre><code>fcitx5 &
-fcitx5-configtool</code></pre>
-Available Input Method에서 hangul을 찾아 추가하고 
-Global Option에서 trigger Input Method에 원하는 키 추가
+KDE setting의 Input Method 탭에서 Add Input Method...를 클릭하고 Hangul을 추가한다.
+Configure global options을 클릭하고 Trigger Input Method:에 원하는 버튼을 할당한다.
 
 나의 경우 Right Alt키를 적용했는데 다른 시스템 단축키도 입력이 되서 Right Alt를 사용하지 않는 펑션키로 매핑하였다.
 <pre><code>sudo pacman -S keyd
@@ -45,4 +31,9 @@ nvim /etc/keyd/default.conf</code></pre>
 
 [main]
 rightalt = f16</code></pre>
+
+systemctl에 등록
+```
+sudo systemctl enable keyd.service --now
+```
 Input Method를 클릭하고 rightalt를 누르면 f16이 적용된다.

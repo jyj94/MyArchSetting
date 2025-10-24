@@ -7,3 +7,9 @@ wev 프로그램으로 입력 이벤트를 살펴보면 눌러도 아무런 입�
 ```
 sudo echo "0" > /sys/module/hid_apple/parameters/fnmode
 ```
+
+
+# 해결법 2
+```nvim /etc/modprobe.d/hid_apple.conf``` 파일을 생성하고 내용 작성
+```options hid_apple fnmode=2```
+```sudo mkinitcpio -P```로 initramfs을 새로 작성해줌

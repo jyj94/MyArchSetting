@@ -39,4 +39,10 @@ sudo pacman -Scc      # 캐시 전체 삭제
 ```
 sudo pacman -Qdt    # 불필요한 의존성 확인
 sudo pacman -Qm     # AUR 등 외부에서 설치된 패키지 확인
+
+# 패키지 목록
+```
+pacman -Q       # 설치한 패키지 리스트 보기
+pacman -Qs      # 의존성 목록 제외
+pacman -Qe      # 직접 설치한 것만 보기
 ```

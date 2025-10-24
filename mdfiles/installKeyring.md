@@ -1,3 +1,8 @@
+# kwallet 설치
+```sudo pacman -S kwallet kwalletmanager
+
+
+
 Gnome keyring으로 선택(더 범용성이 좋음)
 <pre><code>sudo pacman -S gnome-keyring libsecret seahorse</code></pre>
 * gnome-keyring : 핵심 데몬

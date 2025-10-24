@@ -5,23 +5,8 @@
 ## 한글 입력/폰트 설정
 [링크](./mdfiles/settingHangul.md)
 
-## Hyprland 설치
-[링크](./mdfiles/installHyprland.md)
-
-## wofi(앱 실행기) 설치
-[링크](./mdfiles/installWofi.md)
-
-## 로그인 매니저 ReGreet 설치
-[링크](./mdfiles/installRegreet.md)
-
-## waybar(status bar) 설치
-[링크](./mdfiles/installWaybar.md)
-
 ## keyring 설치
 [링크](./mdfiles/installKeyring.md)
-
-## 사운드 설정
-[링크](./mdfiles/settingSound.md)
 
 # 메뉴얼
 ## pacman 사용법
@@ -29,6 +14,9 @@
 
 ## flatpak 사용법
 [링크](./mdfiles/manual/flatpakManual.md)
+
+## timeshift 사용법
+[링크](./mdfiles/manual/)
 
 # 간단한 설정
 ## 부팅, 종료 시 로그 대신 이미지 출력
@@ -38,22 +26,28 @@
 
 # 설치한 프로그램 리스트
 * flatpak
+    * sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 * vscode
-* yay
-* fcitx5
-* chrome
-* kitty
-* hyprland
-* wofi
-* regreet
-* gnome-keyring libsecret seahorse
-* alsa-utils pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
-* wev : 입력 이벤트 표시
+* fcitx5-im, fcitx5-hangul
+* firefox
+* alacritty
 * dolphin : 파일 매니저 [링크](./mdfiles/manual/dolphinManual.md)
 * man
-* zsh
-* waybar
-* p7zip
+* zsh, oh-my-zsh
+* zip
+* git
+* keyd
+* kwallet, kwalletmanager
+* neovim
+* nvidia, nvidia-utils, nvidia-settings
+* gimp
+* DaVinci Resolve
+* obs
+* ffmpeg
+* fastfatch
+* nomacs
+* mpv
+* 
 
 # 문제점
 * ~~소리 안나옴(장치를 못잡는지 설정법을 모름)~~ : 사운드 설정 부분으로 해결
